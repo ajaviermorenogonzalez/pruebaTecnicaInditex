@@ -41,7 +41,7 @@ public class PriceRepositoryImplTest {
     Long productId = 35455L;
     Long brandId = 1L;
 
-    Optional<Price> result = priceRepositoryImpl.findApplicablePrice(productId, brandId,
+    Optional<Price> result = priceRepositoryImpl.findFirstApplicablePrice(productId, brandId,
         applicationDate);
 
     // Verificar que el resultado no sea vacío
@@ -64,7 +64,7 @@ public class PriceRepositoryImplTest {
     Long productId = 35455L;
     Long brandId = 2L;
 
-    Optional<Price> result = priceRepositoryImpl.findApplicablePrice(productId, brandId,
+    Optional<Price> result = priceRepositoryImpl.findFirstApplicablePrice(productId, brandId,
         applicationDate);
 
     // Verificar que el resultado sea vacío

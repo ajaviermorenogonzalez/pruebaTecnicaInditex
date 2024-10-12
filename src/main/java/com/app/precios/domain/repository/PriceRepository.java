@@ -21,6 +21,6 @@ public interface PriceRepository {
    * @return Un {@link Optional} que contiene el {@link PriceEntity} si se encuentra
    *         un precio aplicable; de lo contrario, devuelve un {@link Optional#empty()}.
    */
-  Optional<Price> findApplicablePrice(Long productId, Long brandId, LocalDateTime applicationDate);
+  Optional<Price> findFirstApplicablePrice(Long productId, Long brandId, LocalDateTime applicationDate);
 
 }

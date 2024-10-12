@@ -42,7 +42,7 @@ public class PriceRepositoryImpl implements PriceRepository {
    * @return Un {@link Optional} que contiene el {@link Price} si se encuentra un precio aplicable.
    */
   @Override
-  public Optional<Price> findApplicablePrice(Long productId, Long brandId,
+  public Optional<Price> findFirstApplicablePrice(Long productId, Long brandId,
       LocalDateTime applicationDate) {
 
     log.info("{} Try to find applicable price", LogUtil.getClassNameAndMethodName());
