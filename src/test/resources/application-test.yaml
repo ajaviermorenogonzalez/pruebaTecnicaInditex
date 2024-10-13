@@ -19,3 +19,7 @@ spring:
   web:
     resources:
       add-mappings: false
+
+openapi:
+  servicioDePrecios:
+    base-path: api/v1
